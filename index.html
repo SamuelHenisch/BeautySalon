@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salón</title>
+    <link rel="stylesheet" href="Domov.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+</head>
+<body>
+   <header>
+        <img class="logo" src="6b0b6bdb-8511-4ae4-8dcd-be00df5dbb88_277749322_389729769824503_5274672398558526315_n-removebg-preview.png" alt="Logo firmy" width="120" height="70">
+        <nav>
+            <ul class="menu">
+                <li><a href="#domov">Domov</a></li>
+                <li><a href="#seksluzby">Služby</a></li>
+                <li><a href="">Galéria</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav> 
+   </header>
+   <main>
+        <!--SEKCIA DOMOV-->
+        <div id="domov"> 
+            <div class="pozadie1">
+                <img class="obr" src="pexels-artbovich-7750128.jpg" alt="Obrázok salónu" width="100%" height="auto">
+                <h1>Beauty Salón</h1>
+                <p class="popis">"Vaša krása, naša vášeň."<br>
+                Profesionálne služby pre váš dokonalý vzhľad a vnútornú pohodu.</p>
+            </div>
+        </div>
+        <!--SEKCIA SLUŽBY-->
+        <div id="seksluzby">
+            <h2 class="nadpissluzby">SLUŽBY</h2>
+            <div id="sluzby">
+                <div class="sluzba">
+                    <h3 class="podnadpissluzby">PLEŤOVÁ KOZMETIKA: "VRÁŤTE SVOJEJ PLETI ŽIVOT"</h3>
+                    <span class="sluzbytext"><b>Doprajte svojej tvári to, čo skutočne potrebuje.</b> Naša pleťová kozmetika nie je len o povrchovom čistení – je to rituál zdravia a krásy. Či už vás trápi akné, prvé vrásky alebo unavená pleť bez jasu, naše odborné ošetrenia na mieru vrátia vašej pokožke stratenú rovnováhu. Používame špičkové technológie a dermokozmetiku, ktoré prenikajú hlboko pod povrch, aby ste sa každé ráno do zrkadla pozerali s úsmevom.</span><br>
+                    <button class="objtlacidlo">Objednať sa</button>
+                </div>
+                <div class="sluzba">
+                    <h3 class="podnadpissluzby">LASH & BROW BAR: "POHĽAD, KTORÝ POVIEM VŠETKO"</h3>
+                    <span class="sluzbytext"><b>Doprajte svojej tvári to, čo skutočne potrebuje.</b> Naša pleťová kozmetika nie je len o povrchovom čistení – je to rituál zdravia a krásy. Či už vás trápi akné, prvé vrásky alebo unavená pleť bez jasu, naše odborné ošetrenia na mieru vrátia vašej pokožke stratenú rovnováhu. Používame špičkové technológie a dermokozmetiku, ktoré prenikajú hlboko pod povrch, aby ste sa každé ráno do zrkadla pozerali s úsmevom.</span><br>
+                    <button class="objtlacidlo">Objednať sa</button>
+                </div>
+                <div class="sluzba">
+                    <h3 class="podnadpissluzby">MANIKÚRA A PEDIKÚRA: "DETAILY, NA KTORÝCH ZÁLEŽÍ"</h3>
+                    <span class="sluzbytext"><b>Doprajte svojej tvári to, čo skutočne potrebuje.</b> Naša pleťová kozmetika nie je len o povrchovom čistení – je to rituál zdravia a krásy. Či už vás trápi akné, prvé vrásky alebo unavená pleť bez jasu, naše odborné ošetrenia na mieru vrátia vašej pokožke stratenú rovnováhu. Používame špičkové technológie a dermokozmetiku, ktoré prenikajú hlboko pod povrch, aby ste sa každé ráno do zrkadla pozerali s úsmevom.</span><br>
+                    <button class="objtlacidlo">Objednať sa</button>
+                </div>
+            </div>
+        </div>
+
+        <!--SEKCIA GALÉRIA-->
+        <div id="galeria">
+            <h2 class="nadpissluzby">GALÉRIA</h2>
+        </div>
+
+        <!--SEKCIA KONTAKT-->
+        <div id="kontakt">
+            <h2 class="nadpissluzby">KONTAKT</h2>
+            <div class="kontakt-wrapper">
+                <div class="kontakt-info">
+                    <div class="kontakt-info-item">
+                        <span class="kontakt-ikona">📍</span>
+                        <div>
+                            <h4>Adresa</h4>
+                            <p>Námestie generála Štefánika 528/3<br>064 01 Stará Ľubovňa</p>
+                        </div>
+                    </div>
+                    <div class="kontakt-info-item">
+                        <span class="kontakt-ikona">📞</span>
+                        <div>
+                            <h4>Telefón</h4>
+                            <p>0915 304 266</p>
+                        </div>
+                    </div>
+                    <div class="kontakt-info-item">
+                        <span class="kontakt-ikona">🕐</span>
+                        <div>
+                            <h4>Otváracie hodiny</h4>
+                            <p>Pon – Pia: 8:00 – 17:00<br>So – Ne: Zatvorené</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="kontakt-formular" onsubmit="odoslatFormular(event)">
+                    <div class="form-skupina">
+                        <label for="meno">Meno a priezvisko</label>
+                        <input type="text" id="meno" name="meno" placeholder="Vaše meno" required>
+                    </div>
+                    <div class="form-skupina">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="vas@email.com" required>
+                    </div>
+                    <div class="form-skupina">
+                        <label for="telefon">Telefón</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+421 9XX XXX XXX">
+                    </div>
+                    <div class="form-skupina">
+                        <label for="sluzba">Služba</label>
+                        <select id="sluzba" name="sluzba">
+                            <option value="">-- Vyberte službu --</option>
+                            <option value="pletova-kozmetika">Pleťová kozmetika</option>
+                            <option value="lash-brow">Lash &amp; Brow Bar</option>
+                            <option value="manikura-pedikura">Manikúra a pedikúra</option>
+                            <option value="ine">Iné</option>
+                        </select>
+                    </div>
+                    <div class="form-skupina">
+                        <label for="sprava">Správa</label>
+                        <textarea id="sprava" name="sprava" rows="4" placeholder="Napíšte nám..."></textarea>
+                    </div>
+                    <button type="submit" class="objtlacidlo form-tlacidlo">Odoslať správu</button>
+                    <p class="form-uspech" id="formUspech">✓ Správa bola odoslaná! Ozveme sa vám čoskoro.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-col" id="footlava">
+            <img src="6b0b6bdb-8511-4ae4-8dcd-be00df5dbb88_277749322_389729769824503_5274672398558526315_n-removebg-preview.png" alt="Logo" height="150" width="250">
+        </div>
+        <div class="foot-col">
+            <h3>Kontakt</h3>
+            <p>Námestie generála Štefánika 528/3, 064 01 Stará Ľubovňa</p>
+            <p>0915 304 266</p>
+        </div>
+        <div class="foot-col">
+            <h3>Otváracie hodiny</h3>
+            <p>Pon - Pia: 8:00 - 17:00</p>
+            <p>So - Ne: Zatvorené</p>
+        </div>
+    </footer>
+<script>
+function odoslatFormular(e) {
+    e.preventDefault();
+    document.getElementById('formUspech').style.display = 'block';
+    e.target.reset();
+    setTimeout(() => { document.getElementById('formUspech').style.display = 'none'; }, 5000);
+}
+</script>
+</body>
+</html>
